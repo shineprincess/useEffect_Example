@@ -7,7 +7,11 @@ const UseEffect = () => {
 
   useEffect(() => {
     // console.log("Hello useEffect");
-    document.title =`Chats (${count})`
+   if(count >=1) {
+        document.title =`Chats (${count})`
+   } else {
+       document.title = `Chats `
+   }
   });
 
   return (
