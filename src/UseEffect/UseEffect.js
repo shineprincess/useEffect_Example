@@ -12,7 +12,7 @@ const UseEffect = () => {
    } else {
        document.title = `Chats `
    }
-  });
+  },[count]);
 
   return (
     <>
